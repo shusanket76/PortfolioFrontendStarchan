@@ -1,0 +1,6 @@
+.second-section-hovereffect {
+  transition: scale 0.2s linear;
+}
+.second-section-hovereffect:hover {
+  scale: 1.01;
+}

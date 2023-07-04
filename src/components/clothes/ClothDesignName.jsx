@@ -4,7 +4,10 @@ const ClothDesignName = () => {
   const [name, setName] = useState("");
   const handleSubmit = async () => {
     const data = { name };
-    const response = await axios.post("http://localhost:3500/designame", data);
+    const response = await axios.post(
+      "https://portfolio-470r.onrender.com/designame",
+      data
+    );
     console.log(response);
   };
   return (

@@ -16,11 +16,15 @@ const NatureForm = () => {
     formData.append("photographer", photographer);
 
     try {
-      const res = await axios.post("http://localhost:3500/nature", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
+      const res = await axios.post(
+        "https://portfolio-470r.onrender.com//nature",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
       // ({ image: imageFile });
       console.log(res);
     } catch (err) {
